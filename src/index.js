@@ -18,14 +18,33 @@ const addTodo = function (e) {
   p.className = "todo-item";
   p.innerText = inputText;
 
+  // Create: button完了
+  const completeBtn = document.createElement("button");
+  completeBtn.innerText = "完了";
+  completeBtn.className = "btn-complete";
+  completeBtn.addEventListener("click", () => {
+    alert("はい");
+  });
+
+  // Create: button削除
+  const deleteBtn = document.createElement("button");
+  deleteBtn.innerText = "削除";
+  deleteBtn.className = "btn-delete";
+  deleteBtn.addEventListener("click", () => {
+    alert("はい");
+  });
+
   // Organize directory
   li.appendChild(div);
   div.appendChild(p);
+  div.appendChild(completeBtn);
+  div.appendChild(deleteBtn);
 
   // Add to incomplete lists
-
   incompleteTodos.appendChild(li);
   console.log(li);
+
+  console.log(completeBtn, deleteBtn);
 };
 
 ///////////////////
