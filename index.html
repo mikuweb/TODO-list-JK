@@ -6,28 +6,41 @@
   </head>
   <body>
     <div class="input">
-      <input placeholder="ToDoを入力" />
-      <button>追加</button>
+      <input class="text-input" placeholder="ToDoを入力" />
+      <button class="btn-input">追加</button>
     </div>
 
-    <div class="imcomplete">
-      <p>未完了のToDo</p>
-      <ul>
+    <div class="incomplete">
+      <p class="title">未完了のToDo</p>
+      <ul class="incomplete-todos">
         <li>
-          <div>
+          <div class="list-row">
             <p>TODOです</p>
-            <button>完了</button>
-            <button>削除</button>
+            <button class="btn-complete">完了</button>
+            <button class="btn-delete">削除</button>
+          </div>
+        </li>
+        <li>
+          <div class="list-row">
+            <p class="todo-item">TODOです</p>
+            <button class="btn-complete">完了</button>
+            <button class="btn-delete">削除</button>
           </div>
         </li>
       </ul>
     </div>
 
     <div class="complete">
-      <p>完了したToDo</p>
+      <p class="title">完了したToDo</p>
       <ul>
         <li>
-          <div>
+          <div class="list-row">
+            <p>TODOでした</p>
+            <button class="btn-return">戻す</button>
+          </div>
+        </li>
+        <li>
+          <div class="list-row">
             <p>TODOでした</p>
             <button>戻す</button>
           </div>
